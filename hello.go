@@ -7,3 +7,5 @@ import (
 func hello() {
 	fmt.Println("Hello, World!")
 }
+
+// go test
