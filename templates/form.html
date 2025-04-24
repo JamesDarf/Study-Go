@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>더하기 계산기</title>
+</head>
+<body>
+    <h1>숫자 더하기</h1>
+    <form action="/add" method="POST">
+        <input type="number" name="a" placeholder="첫 번째 숫자">
+        +
+        <input type="number" name="b" placeholder="두 번째 숫자">
+        <button type="submit">계산</button>
+    </form>
+
+    {{if .Result}}
+    <h2>결과: {{.Result}}</h2>
+    {{end}}
+</body>
+</html>
